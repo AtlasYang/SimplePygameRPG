@@ -96,7 +96,7 @@ def get_text(text, size=20, color=BLACK):
     return t
 
 def draw_grass():
-    grassimg = pygame.image.load('images\grass.jpg')
+    grassimg = pygame.image.load('./assets/grass.jpg')
     for i in range(0, WIDTH + 1, 45):
         for j in range(0, HEIGHT + 1, 45):
             DISPLAYSURF.blit(grassimg, (i, j))
@@ -152,9 +152,9 @@ class Skeleton(Monster):
         }
         for i in range(1, 17):
             if i<10:
-                filename = 'images\Skeleton_00' + str(i) + '.png'
+                filename = './assets/Skeleton_00' + str(i) + '.png'
             else:
-                filename = 'images\Skeleton_0' + str(i) + '.png'
+                filename = './assets/Skeleton_0' + str(i) + '.png'
             if i<5:
                 self.image[DOWN].append(pygame.image.load(filename))
             elif i>4 and i<9:
@@ -313,9 +313,9 @@ class Knight(Character):
         }
         for i in range(1, 17):
             if i<10:
-                filename = 'images\Knight_00' + str(i) + '.png'
+                filename = './assets/Knight_00' + str(i) + '.png'
             else:
-                filename = 'images\Knight_0' + str(i) + '.png'
+                filename = './assets/Knight_0' + str(i) + '.png'
             if i<5:
                 self.image[DOWN].append(pygame.image.load(filename))
             elif i>4 and i<9:
@@ -552,9 +552,9 @@ class Scientist(Character):
         }
         for i in range(1, 17):
             if i<10:
-                filename = 'images\Scientist_00' + str(i) + '.png'     
+                filename = './assets/Scientist_00' + str(i) + '.png'     
             else:
-                filename = 'images\Scientist_0' + str(i) + '.png'
+                filename = './assets/Scientist_0' + str(i) + '.png'
             if i<5:
                 self.image[DOWN].append(pygame.image.load(filename))
             elif i>4 and i<9:
@@ -715,9 +715,9 @@ class Mage(Character):
         }
         for i in range(1, 17):
             if i<10:
-                filename = 'images\Mage_00' + str(i) + '.png'
+                filename = './assets/Mage_00' + str(i) + '.png'
             else:
-                filename = 'images\mage_0' + str(i) + '.png'
+                filename = './assets/mage_0' + str(i) + '.png'
             if i<5:
                 self.image[DOWN].append(pygame.image.load(filename))
             elif i>4 and i<9:
@@ -792,9 +792,9 @@ class Assasin(Character):
         }
         for i in range(1, 17):
             if i<10:
-                filename = 'images\Assasinator_00' + str(i) + '.png'
+                filename = './assets/Assasinator_00' + str(i) + '.png'
             else:
-                filename = 'images\Assasinator_0' + str(i) + '.png'
+                filename = './assets/Assasinator_0' + str(i) + '.png'
             if i<5:
                 self.image[DOWN].append(pygame.image.load(filename))
             elif i>4 and i<9:
