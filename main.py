@@ -270,9 +270,9 @@ class Heal():
         self.image = []
         for i in range(1, 13):
             if i<10:
-                filename = 'images/Heal_00{0}.png'.format(str(i))
+                filename = './assets/Heal_00{0}.png'.format(str(i))
             else:
-                filename = 'images/Heal_0{0}.png'.format(str(i))
+                filename = './assets/Heal_0{0}.png'.format(str(i))
             t = pygame.image.load(filename)
             self.image.append(t)
         self.pos = [-999, -999]
@@ -393,9 +393,9 @@ class Poison():
         self.image = []
         for i in range(1, 26):
             if i<10:
-                filename = 'images/poison2_00{0}.png'.format(str(i))
+                filename = './assets/poison2_00{0}.png'.format(str(i))
             else:
-                filename = 'images/poison2_0{0}.png'.format(str(i))
+                filename = './assets/poison2_0{0}.png'.format(str(i))
             t = pygame.image.load(filename)
             self.image.append(t)
         self.pos = [-999, -999]
@@ -426,9 +426,9 @@ class Sheild():
         self.image = []
         for i in range(1, 21):
             if i<10:
-                filename = 'images/magic_00{0}.png'.format(str(i))
+                filename = './assets/magic_00{0}.png'.format(str(i))
             else:
-                filename = 'images/magic_0{0}.png'.format(str(i))
+                filename = './assets/magic_0{0}.png'.format(str(i))
             t = pygame.image.load(filename)
             self.image.append(t)
 
@@ -505,9 +505,9 @@ class Plasma():
         self.image = []
         for i in range(1, 17):
             if i<10:
-                filename = 'images/plasma_00{0}.png'.format(str(i))
+                filename = './assets/plasma_00{0}.png'.format(str(i))
             else:
-                filename = 'images/plasma_0{0}.png'.format(str(i))
+                filename = './assets/plasma_0{0}.png'.format(str(i))
             t = pygame.image.load(filename)
             self.image.append(t)
 
